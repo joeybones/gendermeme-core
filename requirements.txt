@@ -1,0 +1,4 @@
+pycorenlp
+numpy
+flask
+httplib2
