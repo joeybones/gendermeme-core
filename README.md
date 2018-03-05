@@ -6,7 +6,7 @@ This repository forks [gendermeme-core](https://github.com/poorna-kumar/genderme
 
 ## Pre-requisites
 This application expects a Stanford Core NLP v3.8.0 server running on port 9000. 
-- Pull a [dockerized Stanford Core NLP server container] from docker hub
+- Pull a [dockerized Stanford Core NLP server container](https://github.com/joeybones/corenlp-docker) from docker hub
 ```
 docker pull joeybones/stanford_corenlp
 ```
