@@ -1,4 +1,6 @@
 pycorenlp
 numpy
 flask
+flask
+flask-cors
 httplib2

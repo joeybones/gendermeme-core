@@ -1,9 +1,11 @@
-from flask import Flask, Response, request
-from analysis import get_article_info
-app = Flask(__name__)
 import sys
 import os
+from flask import Flask, Response, request
+from analysis import get_article_info
+from flask_cors import CORS
 
+app = Flask(__name__)
+CORS(app)
 
 @app.route('/', methods=['GET', 'POST'])
 def api_get():
