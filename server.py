@@ -22,4 +22,4 @@ def api_get():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=os.getenv('GENDERMEME_PORT'))
+    app.run(host='0.0.0.0', port=int(os.getenv('GENDERMEME_PORT')))
