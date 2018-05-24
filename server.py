@@ -7,6 +7,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+
 @app.route('/', methods=['GET', 'POST'])
 def api_get():
 
@@ -19,6 +20,12 @@ def api_get():
 
     else:
         return Response('Please provide non-null "text" parameter', status=412)
+
+
+@app.route('/check', methods=['GET'])
+def health_check():
+
+    return Response('OK', status=200, mimetype='text/html')
 
 
 if __name__ == '__main__':
